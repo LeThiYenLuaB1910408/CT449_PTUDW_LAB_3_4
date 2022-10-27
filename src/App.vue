@@ -1,11 +1,18 @@
-<script setup></script>
+<script>
+import AppHeader from "@/components/AppHeader.vue";
+export default {
+  components: {AppHeader},
+};
+</script>
 
 <template>
-  <h1>Hiiiii</h1>
+  <div id="app">
+    <AppHeader />
 
-  <main>
-    <TheWelcome />
-  </main>
+    <div class="container mt-3">
+      <router-view />
+    </div>
+  </div>
 </template>
 
 <style>
